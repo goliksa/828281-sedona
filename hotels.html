@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Седон-каталог</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <header class="main-header">
+                <nav class="main-navigation">
+                    <a class="main-header-logo">
+                        <img src="/img/index-logo.svg" width="368" height="153" alt="Логотип 'Sedona'">
+                    </a>
+                    <ul class="site-navigation">
+                    <li><a href="info.html">Информация</a></li>
+                    <li><a href="photo-video.html">Фото и видео</a></li>
+                    <li><a href="map.html">Карта штата</a></li>
+                    <li><a href="hotels.html">Гостиницы</a></li>
+                </ul>
+                </nav>
+            </header>
+
+            <main class="content">
+                <h1 class="visually-hidden">Каталог гостиниц</h1>
+                
+                <section class="filter">
+                    <h2 class="visually-hidden">Фильтр</h2>
+                    <div class="filter-infrastructure">
+                        <h3 class="filter-infrastructure-header">Инфраструктура:</h3>
+                        <ul class="filter-list">
+                            <li class="filter-item">Бассейн</li>
+                            <li class="filter-item">Парковка</li>
+                            <li class="filter-item">Wi-Fi</li>
+                        </ul>
+                    </div>
+                    <div class="filter-housing">
+                        <h3 class="filter-housing-header">Тип жилья:</h3>    
+                        <ul class="filter-list">
+                            <li class="filter-item">Гостиница</li>
+                            <li class="filter-item">Мотель</li>
+                            <li class="filter-item">Апартаменты</li>
+                        </ul>
+                    </div>
+                    <div class="filter-cost">
+                            <h3 class="filter-cost-header">Стоимость в сутки (Р):</h3>
+                            <!-- Тут блок "от и до" не знаю как размечать -->
+                            <span class="button-filter">Показать</span>   
+                        </div>
+                </section>
+
+                <section class="sorting">
+                    <h2 class="visually-hidden">Сортировка результатов поиска</h2>
+                    <p class="sorting-count">Найдено: <span>3</span></p>
+
+                    <div class="sorting-items">
+                        <h3 class="sorting-items-header">Сортировка</h3>
+                        <ul class="sorting-items-list">
+                            <li class="filter-item"><span class="">По цене</span></li>
+                            <li class="filter-item"><span class="">По типу</span></li>
+                            <li class="filter-item"><span class="">По рейтинку</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="sorting-up-down">
+                        <span class="button-sorting-up">Вверх</span>
+                        <span class="button-sorting-down">Вниз</span>
+                    </div>
+                </section>
+
+            </main>
+            
+            <footer class="main-footer">
+                <p class="footer-hashtag">#visitSEDONA</p>
+                <div class="footer-social">
+                    <ul>
+                        <li><a class="social-button" href="#">Вконтакте</a></li>
+                        <li><a class="social-button" href="#">Фейсбук</a></li>
+                        <li><a class="social-button" href="#">Инстаграм</a></li>
+                    </ul>
+                </div>
+                <div class="footer-copyright">
+                    <p>Website by</p>
+                    <a class="button" href="#">HTML Academy</a> 
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
