@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>HTML Academy: Седона</title>
+        <title>HTML Academy: Седона-каталог</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -26,8 +26,8 @@
 
             <!-- раздел intro не совсем пойму как его размечать-->
 
-            <h2 class="description">Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
-            <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p> 
+            <p class="description">Седона — небольшой городок в Аризоне,заслуживающий большего!</p>
+            <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2> 
 
             <section class="advantages-main">
                 <h3>Настоящий городок</h3>
@@ -55,15 +55,15 @@
             </section>  
                    
             <section class="advantages-main">
-                <img src="/img/devilbridge.svg" width="368" height="153" alt="Фото моста дьявола">
                 <h3>Там есть Мост дьявола</h3>
                 <p>— №2 —</p>
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                <img src="/img/devilbridge.svg" width="368" height="153" alt="Фото моста дьявола">
             </section>
             
             <section class="advantages-secondary">
-                <h3 class="visually-hidden">Второстепенные преимущества</h3>
-                <ul class="advantages-secondary-list">
+                    <h3 class="visually-hidden">Второстепенные преимущества</h3>
+                    <ul class="advantages-secondary-list">
                     <li class="advantages-secondary-item">
                         <h4>Небольшая площадь</h4>
                         <p>— №3 —</p>
@@ -82,13 +82,6 @@
                 </ul>
             </section>
 
-            <section class="search-form">
-                <h2 class="search-form-header">Заинтересовались?</h2>
-                <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-                <span class="button-search">ПОИСК ГОСТИНИЦЫ В Cедоне</span>
-                <!-- Тут будет форма поиска-->
-            </section>
-
             <section class="map">
                 <h2 class="visually-hidden">Интерактивная карта</h2>
                 <!-- Тут будет интерактивная карта-->
@@ -105,11 +98,17 @@
                     <li><a class="social-button" href="#">Инстаграм</a></li>
                 </ul>
             </div>
-            <div class="footer-copyright">
-                <p>Website by</p>
-                <a class="button" href="#">HTML Academy</a> 
-            </div>
-            
+            <p class="footer-copyright">Website by</p>
+            <a class="button" href="#">HTML Academy</a> 
         </footer>
+
+        <section class="modal modal-search">
+            <header class="modal-search-header">
+                <h2 class="modal-search-header-first">Заинтересовались?</h2>
+                <p class="modal-search-header-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+                <h3 class="modal-search-header-second">ПОИСК ГОСТИНИЦЫ В седоне</h3>
+            </header>
+            <!-- Тут будет форма поиска-->
+        </section>
     </body>
 </html>
