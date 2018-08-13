@@ -25,30 +25,35 @@
             <main class="content">
                 <h1 class="visually-hidden">Каталог гостиниц</h1>
                 
-                <section class="filter">
+                <form class="filter">
                     <h2 class="visually-hidden">Фильтр</h2>
-                    <div class="filter-infrastructure">
-                        <h3 class="filter-infrastructure-header">Инфраструктура:</h3>
+                    <fieldset class="filter-infrastructure">
+                        <legend class="filter-section-header">Инфраструктура:</legend>
                         <ul class="filter-list">
-                            <li class="filter-item">Бассейн</li>
-                            <li class="filter-item">Парковка</li>
-                            <li class="filter-item">Wi-Fi</li>
+                            <li class="filter-item"><p><input type="checkbox">Бассейн</p></li>
+                            <li class="filter-item"><p><input type="checkbox">Парковка</p></li>
+                            <li class="filter-item"><p><input type="checkbox">Wi-Fi</p></li>
                         </ul>
-                    </div>
-                    <div class="filter-housing">
-                        <h3 class="filter-housing-header">Тип жилья:</h3>    
+                    </fieldset>
+                    <fieldset class="filter-housing">
+                        <legend class="filter-section-header">Тип жилья:</legend>    
                         <ul class="filter-list">
-                            <li class="filter-item">Гостиница</li>
-                            <li class="filter-item">Мотель</li>
-                            <li class="filter-item">Апартаменты</li>
+                            <li class="filter-item"><p><input type="checkbox">Гостиница</p></li>
+                            <li class="filter-item"><p><input type="checkbox">Мотель</p></li>
+                            <li class="filter-item"><p><input type="checkbox">Апартаменты</p></li>
                         </ul>
-                    </div>
-                    <div class="filter-cost">
-                            <h3 class="filter-cost-header">Стоимость в сутки (Р):</h3>
-                            <!-- Тут блок "от и до" не знаю как размечать -->
-                            <span class="button-show">Показать</span>   
-                        </div>
-                </section>
+                    </fieldset>
+                    <fieldset class="filter-cost">
+                        <legend class="filter-section-header">Стоимость в сутки (Р):</legend>
+                        <input value="От 0">
+                        <input value="До 3000">
+                        <p>
+                            <input type="button" class="filter-cost-button-from" value="От">
+                            <input type="button" class="filter-cost-button-to" value="До">
+                        </p> 
+                    </fieldset>
+                    <button class="button-show">Показать</button>
+                </form>
 
                 <section class="sorting">
                     <h2 class="visually-hidden">Результаты поиска</h2>
@@ -57,15 +62,15 @@
                     <div class="sorting-items">
                         <h3 class="sorting-items-header">Сортировка:</h3>
                         <ul class="sorting-items-list">
-                            <li class="sorting-item"><span class="sorting-button-center">По цене</span></li>
-                            <li class="sorting-item"><span class="sorting-button-type">По типу</span></li>
-                            <li class="sorting-item"><span class="sorting-button-rating">По рейтинку</span></li>
+                            <li class="sorting-item"><a class="sorting-button-center">По цене</a></li>
+                            <li class="sorting-item"><a href="#" class="sorting-button-type">По типу</a></li>
+                            <li class="sorting-item"><a href="#" class="sorting-button-rating">По рейтинку</a></li>
                         </ul>
                     </div>
 
                     <div class="sorting-up-down">
-                        <span class="button-sorting-up">Вверх</span>
-                        <span class="button-sorting-down">Вниз</span>
+                        <a href="#" class="button-sorting-up">Вверх</a>
+                        <a href="#" class="button-sorting-down">Вниз</a>
                     </div>
                 </section>
 
