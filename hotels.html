@@ -12,7 +12,7 @@
 
             <header class="main-header">
                 <nav class="main-navigation">
-                    <a href="index.html" class="main-header-logo">
+                    <a href="index.html" class="main-header-logo" aria-label="На главную">
                         <img src="img/logo.svg" width="140" height="72" alt="Логотип 'Sedona'">
                     </a>
                     <ul class="site-navigation">
@@ -29,34 +29,34 @@
                 
 <!-- Форма фильтрации-->
                 
-                <form class="filter">
+                <form class="filter" action="https://echo.htmlacademy.ru" method="post">
                     <h2 class="visually-hidden">Фильтр</h2>
                     <fieldset class="filter-infrastructure">
                         <legend class="filter-section-header">Инфраструктура:</legend>
                         <ul class="filter-list">
-                            <li class="filter-item"><input type="checkbox">Бассейн</li>
-                            <li class="filter-item"><input type="checkbox">Парковка</li>
-                            <li class="filter-item"><input type="checkbox">Wi-Fi</li>
+                            <li class="filter-item"><label><input type="checkbox" name="pool" checked>Бассейн</label></li>
+                            <li class="filter-item"><label><input type="checkbox" name="parking">Парковка</label></li>
+                            <li class="filter-item"><label><input type="checkbox" name="wi-fi">Wi-Fi</label></li>
                         </ul>
                     </fieldset>
                     <fieldset class="filter-housing">
                         <legend class="filter-section-header">Тип жилья:</legend>    
                         <ul class="filter-list">
-                            <li class="filter-item"><input type="checkbox">Гостиница</li>
-                            <li class="filter-item"><input type="checkbox">Мотель</li>
-                            <li class="filter-item"><input type="checkbox">Апартаменты</li>
+                            <li class="filter-item"><label><input type="checkbox" name="hotel" checked>Гостиница</label></li>
+                            <li class="filter-item"><label><input type="checkbox" name="motel" checked>Мотель</label></li>
+                            <li class="filter-item"><label><input type="checkbox" name="apartment" checked>Апартаменты</label></li>
                         </ul>
                     </fieldset>
                     <fieldset class="filter-cost">
                         <legend class="filter-section-header">Стоимость в сутки (Р):</legend>
-                        <span>От<input type="number" value="0"></span>
-                        <span>До<input type="number" value="3000"></span>
+                        <label>От<input type="number" value="0" name="cost-from"></label>
+                        <label>До<input type="number" value="3000" name="cost-to"></label>
                         <div>
                             <input type="button" class="filter-cost-button-from" value="От">
                             <input type="button" class="filter-cost-button-to" value="До">
                         </div> 
                     </fieldset>
-                    <button class="button-show">Показать</button>
+                    <input class="button-show" type="submit" value="Показать">
                 </form>
 
 <!-- Результат поиска и настройка его отображения -->
@@ -68,15 +68,15 @@
                     <div class="sorting-items">
                         <h3 class="sorting-items-header">Сортировка:</h3>
                         <ul class="sorting-items-list">
-                            <li class="sorting-item"><a>По цене</a></li>
-                            <li class="sorting-item"><a href="#">По типу</a></li>
-                            <li class="sorting-item"><a href="#">По рейтинку</a></li>
+                            <li class="sorting-item"><a aria-label="Выстроить список по цене">По цене</a></li>
+                            <li class="sorting-item"><a href="#" aria-label="Выстроить список по типу">По типу</a></li>
+                            <li class="sorting-item"><a href="#" aria-label="Выстроить список по рейтингу">По рейтинку</a></li>
                         </ul>
                     </div>
 
                     <div class="sorting-up-down">
-                        <a class="button-sorting-up">Вверх</a>
-                        <a href="#" class="button-sorting-down">Вниз</a>
+                        <a class="button-sorting-up" aria-label="Выстроить список сверху вниз">Вверх</a>
+                        <a href="#" class="button-sorting-down" aria-label="Выстроить список снизу вверх">Вниз</a>
                     </div>
                 </section>
 
@@ -163,14 +163,14 @@
                 <p class="footer-hashtag">#visitSEDONA</p>
                 <div class="footer-social">
                     <ul>
-                        <li><a class="social-button" href="#">Вконтакте</a></li>
-                        <li><a class="social-button" href="#">Фейсбук</a></li>
-                        <li><a class="social-button" href="#">Инстаграм</a></li>
+                        <li><a class="social-button" href="#" aria-label="Мы Вконтакет">Вконтакте</a></li>
+                        <li><a class="social-button" href="#" aria-label="Мы в Фуйсбук">Фейсбук</a></li>
+                        <li><a class="social-button" href="#" aria-label="Мы на ютубе">Ютуб</a></li>
                     </ul>
                 </div>
                 <div class="footer-copyright">
                     <p>Website by</p>
-                    <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> 
+                    <a class="button" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy">HTML Academy</a> 
                 </div>
             </footer>
             

@@ -84,17 +84,16 @@
                     <h2 class="search-form-header">Заинтересовались?</h2>
                     <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
                     <button type="button" class="button-search">ПОИСК ГОСТИНИЦЫ В Cедоне</button>
-                    <!-- Тут будет форма поиска-->
-                    <form class="search-form-data">
-                        <p>Дата заезда: <input type="date"></p>
-                        <p>Дата выезда: <input type="date"></p>
+                    <form class="search-form-data" action="https://echo.htmlacademy.ru" method="post">
+                        <label>Дата заезда: <input type="date" name="arrival"></label>
+                        <label>Дата выезда: <input type="date" name="departure"></label>
                         <div class="search-form-data-adults">
-                            <p>Взрослые: <input type="number" value="2"></p>
+                            <label>Взрослые: <input type="number" value="2" name="adults"></label>
                         </div>
                         <div class="search-form-data-children">
-                            <p>Дети: <input type="number" value="0"></p>
+                            <label>Дети: <input type="number" value="0" name="children"></label>
                         </div>
-                        <button class="search-form-button">Найти</button>
+                        <input class="search-form-button" type="submit" value="Найти">
                     </form>
                 </section>
 
@@ -109,14 +108,14 @@
                 <p class="footer-hashtag">#visitSEDONA</p>
                 <div class="footer-social">
                     <ul>
-                        <li><a class="social-button" href="#">Вконтакте</a></li>
-                        <li><a class="social-button" href="#">Фейсбук</a></li>
-                        <li><a class="social-button" href="#">Инстаграм</a></li>
+                        <li><a class="social-button" href="#" aria-label="Мы Вконтакет">Вконтакте</a></li>
+                        <li><a class="social-button" href="#" aria-label="Мы в Фуйсбук">Фейсбук</a></li>
+                        <li><a class="social-button" href="#" aria-label="Мы на ютубе">Ютуб</a></li>
                     </ul>
                 </div>
                 <div class="footer-copyright">
                     <p>Website by</p>
-                    <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> 
+                    <a class="button" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy">HTML Academy</a> 
                 </div>
             </footer>
         </div>
