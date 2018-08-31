@@ -3,9 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
-        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
-    <body>
+    <body class="index-body">
         <div class="container">
 
             <header class="main-header">
@@ -23,14 +25,18 @@
             </header>
 
             <main class="content">
-                <img src="img/intro.jpg" width="368" height="153" alt="Картинка Седона">
-                <h1 class="description">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-                <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p> 
+                <img src="img/welcome.svg" width="459" height="353" alt="Картинка с приветствием">
+                <br>
+                <img src="img/poligon.svg" width="1201" height="59" alt="Декоративная картинка">
+                <h1 class="description">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
+                <p class="main-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p> 
 
                 <section class="advantages-main">
-                    <h2 class="advantages-main-header">Настоящий городок</h2>
-                    <span>— №1 —</span>
-                    <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                    <div>
+                        <h2 class="advantages-main-header">Настоящий городок</h2>
+                        <span>— №1 —</span>
+                        <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                    </div> 
                     <img src="img/town-photo.jpg" width="800" height="401" alt="Фото улицы города">
                 </section>
 
@@ -54,9 +60,11 @@
                     
                 <section class="advantages-main">
                     <img src="img/devilbridge.jpg" width="800" height="400" alt="Фото моста дьявола">
-                    <h2 class="advantages-main-header">Там есть Мост дьявола</h2>
-                    <span>— №2 —</span>
-                    <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                    <div>
+                        <h2 class="advantages-main-header">Там есть Мост дьявола</h2>
+                        <span>— №2 —</span>
+                        <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                    </div>
                 </section>
                 
                 <section class="advantages-secondary">

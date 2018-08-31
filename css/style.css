@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: white;
+}    
+
+.index-body {
+    background-color: white;
+    background-image: url("../img/intro-background.jpg");
+    background-size: 1200 800;
+    background-position: top center;
+    background-repeat: no-repeat;  
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    visibility: hidden;
+}
+
+.main-navigation {
+    line-height: 26px;
+    color: #000000;
+    background-color: white;
+}
+
+.main-navigation li {
+    list-style: none;
+}
+
+.main-navigation a {
+    color: black;
+}
+
+.description {
+    font-size: 21px;
+    line-height: 26px;
+    background-color: white;
+    color: black;
+}
+
+.main-text {
+    line-height: 26px;
+    font-weight: normal;
+    background-color: white;
+    color: black;
+}
+
+.advantages-main div{
+    width: 400px;
+    height: 256px;
+    color: white;
+    background-color: #81b3d2;
+    text-align: center;
+    font-weight: normal;
+}
+
+.advantages-main-header {
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.advice-list {
+    list-style: none;
+    font-weight: normal;
+    background-color: white;
+    color: black;
+}
+
+.advice-item {
+    text-align: center;
+}
+
+.advice-list h4 {
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.advantages-secondary {
+    background-color: #eeeeee;
+    color: black;
+    font-weight: normal;
+}
+
+.advantages-secondary-item{
+    list-style: none;
+    text-align: center;
+}
+
+.advantages-secondary-list h4 {
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.search-form {
+    text-align: center;
+}
+
+.search-form-header {
+    font-size: 30px;
+    line-height: 36px;
+    background-color: white;
+    color: black;
+}
+
+.search-form p {
+    font-size: 14px;
+    line-height: 24px;
+    background-color: white;
+    color: black;
+    font-weight: normal; 
+}
+
+.button-search {
+    text-transform: uppercase;
+    font-size: 21px;
+    line-height: 26px;
+    color: white;
+    background-color: #766357;
+    padding:  30px 0;
+    width: 568px;
+    border: none;
+}
+
+.button-search:hover {
+    background-color: #604e43;
+}
+
+.button-search:active {
+    background-color: #503e33;
+    color: #857871;
+}
+
+
+
+.search-form-button {
+    font-size: 21px;
+    line-height: 26px;
+    color: white;
+    background-color: #81b3d2;
+    width: 458px;
+    padding:  16px 0;
+    border: none;
+}
+
+.search-form-button:hover {
+    background-color: #669ec0;
+}
+
+.search-form-button:active {
+    background-color: #5496bd;
+    color: #88b6d1;
+}
+
+.footer-social li{
+    list-style: none;
+}
