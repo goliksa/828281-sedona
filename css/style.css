@@ -12,11 +12,15 @@ body {
 }    
 
 .container {
-    width: 1200px
+    width: 1200px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .content {
     background-color: white;
+    margin: 0px;
+    padding: 0px;
 }
 
 .index-body {
@@ -68,6 +72,11 @@ a {
     line-height: 26px;
     background-color: white;
     color: black;
+    margin: 0px;
+    margin-bottom: 35px;
+    padding-top: 60px;
+    text-align: center;
+
 }
 
 .main-text {
@@ -75,6 +84,7 @@ a {
     font-weight: normal;
     background-color: white;
     color: black;
+    text-align: center;
 }
 
 .advantages-main div{
@@ -364,15 +374,16 @@ body {
 .main-header {
     margin: 0;
     padding: 0;
-    margin-bottom: 76px;
 }
 
 .site-navigation {
     display: flex;
     width: 1200px;
-    min-height: 56;
+    min-height: 44px;
     margin: 0;
     padding: 0;
+    padding-top: 12px;
+    margin-bottom: 76px;
 
 
 /*---- Пока очень примерно влинию ----*/
@@ -389,5 +400,44 @@ body {
 .poligon {
     width: 1200px;
     display: block;
+    padding: 0px;
     margin: 0 auto;
+}
+
+.advantages-main {
+    display: flex;
+    width: 1200px;
+    min-height: 256px;
+    margin: 0;
+    padding: 0;
+}
+
+.advantages-main div{
+    display: block;
+}
+
+.advice-list {
+    display: flex;
+    justify-content: space-around;
+    
+    margin: 0;
+    padding: 0; 
+}
+
+.advice-list li{
+    width: 300px; 
+    min-height: 200px;
+}
+
+.advantages-secondary-list {
+    display: flex;
+    justify-content: space-around;
+    
+    margin: 0;
+    padding: 0; 
+}
+
+.advantages-secondary-list li{
+    width: 300px; 
+    min-height: 200px;
 }
