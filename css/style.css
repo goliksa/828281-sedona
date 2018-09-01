@@ -25,18 +25,14 @@ body {
 
 .index-body {
     background-color: white;
-    background-image: url("../img/intro-background.jpg");
-    background-size: 1200px 800px;
-    background-position: top left;
-    background-repeat: no-repeat;  
+    background-image: url("../img/intro-background.jpg"), url("../img/map.jpg");
+    background-size: 1200px 800px, 1200px 473px;
+    background-position: top left, bottom left;
+    background-repeat: no-repeat, no-repeat;  
 }
 
 .content {
-    background-color: white;
-    background-image: url("../img/map.jpg");
-    background-size: 1200px 473px;
-    background-position: bottom left;
-    background-repeat: no-repeat;  
+    background-color: white; 
 }
 
 a {
@@ -229,6 +225,10 @@ a {
 .search-form-button:active {
     background-color: #5496bd;
     color: #88b6d1;
+}
+
+.main-footer {
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .footer-social li{
@@ -453,4 +453,28 @@ body {
 .advantages-secondary-list li{
     width: 300px; 
     min-height: 200px;
+}
+
+.main-footer {
+    margin-top: 78px;
+    width: 1200px;
+    min-height: 120px;
+
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-hashtag {
+    width: 240px;
+}
+
+.footer-social {
+    width: 160px;
+}
+
+.footer-copyright {
+    width: 240px;
 }
