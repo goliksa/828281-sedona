@@ -31,6 +31,14 @@ body {
     background-repeat: no-repeat;  
 }
 
+.content {
+    background-color: white;
+    background-image: url("../img/map.jpg");
+    background-size: 1200px 473px;
+    background-position: bottom left;
+    background-repeat: no-repeat;  
+}
+
 a {
     text-decoration: none;
 }
@@ -139,10 +147,15 @@ a {
 }
 
 .search-form-data {
+    width: 568px;
+    min-height: 395px;
+    display: block;
+    margin: 0 auto;
     background-color: white;
     font-size: 14px;
     line-height: 26px;
     color: black;
+
 }
 
 .search-form-data [type="text"]  {
