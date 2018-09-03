@@ -15,24 +15,21 @@ body {
     width: 1200px;
     margin: 0px;
     padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .content {
-    background-color: white;
     margin: 0px;
     padding: 0px;
 }
 
 .index-body {
     background-color: white;
-    background-image: url("../img/intro-background.jpg"), url("../img/map.jpg");
-    background-size: 1200px 800px, 1200px 473px;
-    background-position: top left, bottom left;
-    background-repeat: no-repeat, no-repeat;  
-}
-
-.content {
-    background-color: white; 
+    background-image: url("../img/map.jpg");
+    background-size: 1200px 473px;
+    background-position: bottom center;
+    background-repeat: no-repeat;  
 }
 
 a {
@@ -40,7 +37,19 @@ a {
 }
 
 .visually-hidden {
-    visibility: hidden;
+    display: none;
+}
+
+.index-header {
+    margin: 0px;
+    padding: 0px;
+    width: 1200px;
+    min-height: 565px;
+    background-color: white;
+    background-image: url("../img/poligon.svg"), url("../img/intro-background.jpg");
+    background-size: 1200px 60px, 1200px 800px;
+    background-position: bottom center, top center;
+    background-repeat: no-repeat, no-repeat;  
 }
 
 .main-navigation {
@@ -95,6 +104,7 @@ a {
 .advantages-main div{
     width: 400px;
     height: 256px;
+    padding-top: 10px;
     color: white;
     background-color: #81b3d2;
     text-align: center;
@@ -380,14 +390,6 @@ a.sorting-item-active {
                              /* ---Стили для сетки---*/
 
 
-.visually-hidden {
-    display: flex;
-    height: 0px;
-    width: 0px;
-    margin: 0px;
-    padding: 0px;
-}
-
 html,
 body {
     min-width: 1200px;
@@ -395,13 +397,16 @@ body {
 }
 
 .main-header-logo {
+    object-fit: contain;
+    object-position: top;
     position: absolute;
-    left: 530px;
+    left: 47%;
 }
 
 .main-header {
     margin: 0;
     padding: 0;
+    width: 1200px;
 }
 
 .index-body .site-navigation {
@@ -448,10 +453,10 @@ body {
     display: block;
 }
 
+
 .advice-list {
     display: flex;
     justify-content: space-around;
-    
     margin: 0;
     padding: 0; 
 }
@@ -472,6 +477,13 @@ body {
 .advantages-secondary-list li{
     width: 300px; 
     min-height: 200px;
+}
+
+.search-form-data {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column;
+    align-items: center;
 }
 
 .main-footer {
@@ -573,4 +585,13 @@ body {
     justify-content: space-around;
     padding: 0px;
     margin: 0px;
+}
+
+.search-form-data label {
+    margin: 0px;
+    padding: 0px;
+}
+
+.search-form-data-adults {
+ background-color: red;
 }
