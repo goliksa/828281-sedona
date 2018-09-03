@@ -242,7 +242,7 @@ a {
 
 .filter {
     background-color: #81b3d2;
-    background: 0px -500px url("../img/form-background.jpg") no-repeat;
+    background: 0px -280px url("../img/form-background.jpg") no-repeat;
     background-size: 100%;
     color: white;
     font-weight: normal; 
@@ -381,6 +381,10 @@ a.sorting-item-active {
     color: #766860;
 }
 
+.hotel-rating p {
+    background-color: #f2f2f2;
+}
+
                                                                  /* ---Стили для сетки---*/
 
 
@@ -507,7 +511,7 @@ body {
     min-height: 200px;
 }
 
-                                                                     /* ---  сетка Второстепенный преимущества  ---*/
+                                                                     /* ---  сетка Второстепенные преимущества  ---*/
                                                                                                                                             
 .advantages-secondary-list {
     width: 1200px; 
@@ -525,15 +529,6 @@ body {
 
                                                                      /* ---  сетка  "Заинтересовались?" ---*/
 
-
- /* --- цветной фон  ---
-                             
- background-color: lightskyblue;
- background-color: green;
- background-color: red;
-
- */
-
  .search-form {
     min-height: 291px;
     display: flex;
@@ -541,10 +536,6 @@ body {
     align-items: center;
     justify-content: flex-end; 
  }
-
- .button-search {
-
-}
  
 .search-form-data {
     display: flex;
@@ -579,42 +570,73 @@ body {
     width: 240px;
 }
 
+                                                                     /* ---  сетка  Фильтр на внутренней ---*/
+
 .filter {
     min-height: 217px;
     padding: 0px;
     margin: 0px;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    padding-right: 72px;
+}
+
+.filter-block {
+    width: 240px;
+    min-height: 160px;
 }
 
 .filter-infrastructure {
-    justify-content: flex-start;
+    margin-left: 72px;
+    padding: 0px;
+}
+
+.filter-housing {
     margin: 0px;
     padding: 0px;
 }
 
-.filter-cost
-{
+.filter-cost{
+    width: 328px;
     margin: 0px;
     padding: 0px;
+
+    margin-left: auto;
 }
+
+                                                                     /* ---  сетка  Инструменты сортировки на внутренней ---*/
 
 .sorting {
-    display: flex;
-    justify-content: space-around;
-    width: 1200px;
-    min-height: 86px;
     padding: 0px;
     margin: 0px;
+    display: flex;
+    align-items: center;
+    width: 1128px;
+    min-height: 86px;
+    padding-right: 72px;
+}
 
+.sorting-count {
+    padding: 0px;
+    margin: 0px;
+    margin-left: 72px;
+    margin-right: 50px;
 }
 
 .sorting-items {
-    justify-content: space-around;
-    width: 288px;
+    width: 480px;
     padding: 0px;
     margin: 0px;
     display: flex;
+}
+
+.sorting-item {
+    margin-right: 34px;
+}
+
+.sorting-items-header {
+    padding: 0px;
+    margin: 0px;
 }
 
 .sorting-items-list {
@@ -623,23 +645,35 @@ body {
     padding: 0px;
     margin: 0px;
     display: flex;
+    margin-left: 40px;
 }
 
+.sorting-up-down {
+    padding: 0px;
+    margin: 0px;
+    margin-left: auto;
+}
+
+                                                                     /* ---  сетка  Блок отеля на внутренней ---*/
 
 
 .hotel {
     display: flex;
-    justify-content: space-around;
-    width: 1200px;
+    align-items: center;
+    width: 1128px;
     min-height: 150px;
     padding: 0px;
     margin: 0px;
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
+    padding-right: 72px;
 }
 
 .hotel img {
-    padding: 30px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 72px;
+    margin-right: 30px;
 }
 
 .hotel-description {
@@ -656,11 +690,13 @@ body {
     margin: 0px;
 }
 
+.hotel-rating {
+    padding: 0px;
+    margin: 0px;
+    margin-left: auto;
+}
+
 .search-form-data label {
     margin: 0px;
     padding: 0px;
-}
-
-.search-form-data-adults {
-    
 }
