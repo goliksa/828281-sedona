@@ -27,7 +27,7 @@ body {
 .index-body {
     background-color: white;
     background-image: url("../img/map.jpg");
-    background-size: 1200px 473px;
+
     background-position: bottom center;
     background-repeat: no-repeat;  
 }
@@ -47,7 +47,7 @@ a {
     min-height: 565px;
     background-color: white;
     background-image: url("../img/poligon.svg"), url("../img/intro-background.jpg");
-    background-size: 1200px 60px, 1200px 800px;
+    background-size: 1200px 57px, 1200px 800px;
     background-position: bottom center, top center;
     background-repeat: no-repeat, no-repeat;  
 }
@@ -86,9 +86,6 @@ a {
     line-height: 26px;
     background-color: white;
     color: black;
-    margin: 0px;
-    margin-bottom: 35px;
-    padding-top: 60px;
     text-align: center;
 
 }
@@ -102,9 +99,6 @@ a {
 }
 
 .advantages-main div{
-    width: 400px;
-    height: 256px;
-    padding-top: 10px;
     color: white;
     background-color: #81b3d2;
     text-align: center;
@@ -387,7 +381,7 @@ a.sorting-item-active {
     color: #766860;
 }
 
-                             /* ---Стили для сетки---*/
+                                                                 /* ---Стили для сетки---*/
 
 
 html,
@@ -397,10 +391,14 @@ body {
 }
 
 .main-header-logo {
-    object-fit: contain;
-    object-position: top;
+
     position: absolute;
     left: 47%;
+}
+
+.main-header-logo img{
+    object-fit: contain;
+    object-position: top;
 }
 
 .main-header {
@@ -413,19 +411,45 @@ body {
     margin-bottom: 76px;
 }
 
+                                                                     /* ---  сетка Хэдэра  ---*/
+
+.main-navigation {
+    min-height: 56px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.site-navigation li {
+    margin: 0px;
+    padding: 0px;
+    width: 128px;
+}
+
+.site-navigation li:first-child {
+    margin-right: 112px;
+
+}
+
+.site-navigation li:last-child {
+    text-align: right;
+    margin-right: 0;
+}
+
+.site-navigation li:nth-last-child(2) {
+    text-align: right;
+    margin-left: auto;
+    margin-right: 112px;
+}
+
 .site-navigation {
     display: flex;
-    width: 1200px;
-    min-height: 44px;
+    align-items: center;
+    width: 1056px;
     margin: 0;
     padding: 0;
-    padding-top: 12px;
-
-
-
-/*---- Пока очень примерно влинию ----*/
-
-    justify-content: space-around;
+    padding-top: 15px;
+    padding-left: 72px;
+    padding-right: 72px;
 }
 
 .welcome-img {
@@ -441,6 +465,21 @@ body {
     margin: 0 auto;
 }
 
+                                                                     /* ---  сетка Главный заголовок и текст  ---*/
+
+.description {
+    height: 80px;
+    margin: 0px;
+    margin-top: 30px;
+}
+
+.main-text {
+    height: 60px;
+}
+
+                                                                     /* ---  сетка главные преимущества №1  ---*/
+
+
 .advantages-main {
     display: flex;
     width: 1200px;
@@ -449,13 +488,15 @@ body {
     padding: 0;
 }
 
-.advantages-main div{
-    display: block;
-}
 
+                                                                     /* ---  сетка Советы  ---*/
 
+                                                       
 .advice-list {
     display: flex;
+    align-items: flex-end;
+    width: 1200px;
+    min-height: 330px;
     justify-content: space-around;
     margin: 0;
     padding: 0; 
@@ -466,12 +507,15 @@ body {
     min-height: 200px;
 }
 
+                                                                     /* ---  сетка Второстепенный преимущества  ---*/
+                                                                                                                                            
 .advantages-secondary-list {
+    width: 1200px; 
+    min-height: 256px;
     display: flex;
-    justify-content: space-around;
-    
     margin: 0;
     padding: 0; 
+    justify-content: space-around;
 }
 
 .advantages-secondary-list li{
@@ -479,12 +523,37 @@ body {
     min-height: 200px;
 }
 
+                                                                     /* ---  сетка  "Заинтересовались?" ---*/
+
+
+ /* --- цветной фон  ---
+                             
+ background-color: lightskyblue;
+ background-color: green;
+ background-color: red;
+
+ */
+
+ .search-form {
+    min-height: 291px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; 
+ }
+
+ .button-search {
+
+}
+ 
 .search-form-data {
     display: flex;
     justify-content: space-around;
     flex-flow: column;
     align-items: center;
 }
+
+                                                                     /* ---  сетка  Футер ---*/
 
 .main-footer {
     margin-top: 78px;
@@ -593,5 +662,5 @@ body {
 }
 
 .search-form-data-adults {
- background-color: red;
+    
 }
