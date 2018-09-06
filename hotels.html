@@ -33,32 +33,82 @@
                 
                 <form class="filter" action="https://echo.htmlacademy.ru" method="post">
                     <h2 class="visually-hidden">Фильтр</h2>
+
                     <fieldset class="filter-block filter-infrastructure">
                         <legend class="filter-section-header">Инфраструктура:</legend>
                         <ul class="filter-list">
-                            <li class="filter-item"><label><input type="checkbox" name="pool" checked>Бассейн</label></li>
-                            <li class="filter-item"><label><input type="checkbox" name="parking">Парковка</label></li>
-                            <li class="filter-item"><label><input type="checkbox" name="wi-fi">Wi-Fi</label></li>
+                            <li class="filter-item">
+                                <label>
+                                    <input class="visually-hidden" type="checkbox" name="pool" checked>
+                                    <span class="chek-box"></span>
+                                    Бассейн
+                                </label>
+                            </li>
+                            <li class="filter-item">
+                                <label>
+                                    <input class="visually-hidden" type="checkbox" name="parking">
+                                    <span class="chek-box"></span>
+                                    Парковка
+                                </label>
+                            </li>
+                            <li class="filter-item">
+                                <label>
+                                    <input class="visually-hidden" type="checkbox" name="wi-fi">
+                                    <span class="chek-box"></span>
+                                    Wi-Fi
+                                </label>
+                            </li>
                         </ul>
                     </fieldset>
+
                     <fieldset class="filter-block filter-housing">
                         <legend class="filter-section-header">Тип жилья:</legend>    
                         <ul class="filter-list">
-                            <li class="filter-item"><label><input type="checkbox" name="hotel" checked>Гостиница</label></li>
-                            <li class="filter-item"><label><input type="checkbox" name="motel" checked>Мотель</label></li>
-                            <li class="filter-item"><label><input type="checkbox" name="apartment" checked>Апартаменты</label></li>
+                            <li class="filter-item">
+                                <label>
+                                    <input class="visually-hidden" class="visually-hidden" type="checkbox" name="hotel" checked>
+                                    <span class="chek-box"></span>
+                                    Гостиница
+                                </label>
+                            </li>
+                            <li class="filter-item">
+                                <label>
+                                    <input class="visually-hidden" type="checkbox" name="motel" checked>
+                                    <span class="chek-box"></span>
+                                    Мотель
+                                </label>
+                            </li>
+                            <li class="filter-item">
+                                <label>
+                                    <input class="visually-hidden" type="checkbox" name="apartment" checked>
+                                    <span class="chek-box"></span>
+                                    Апартаменты
+                                </label>
+                            </li>
                         </ul>
                     </fieldset>
-                    <fieldset class="filter-block filter-cost">
+
+                    <fieldset class="filter-bloc filter-cost">
                         <legend class="filter-section-header">Стоимость в сутки (Р):</legend>
-                        <label>От<input type="number" value="0" name="cost-from"></label>
-                        <label>До<input type="number" value="3000" name="cost-to"></label>
-                        <div>
-                            <input type="button" class="filter-cost-button-from" value="От">
-                            <input type="button" class="filter-cost-button-to" value="До">
+
+                        <div class="range-value"> 
+                            <label for="from">От</label>
+                            <input id="from" type="text" value="0" name="cost-from">
+                            <label for="to">До</label>
+                            <input id="to" type="text" value="3000" name="cost-to">
+                        </div>
+
+                        <div class="range-buttons">
+                            <span class="filter-cost-button from">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23"><path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/></svg> 
+                            </span>
+                            <span class="filter-cost-button to">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23"><path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/></svg>
+                            </span>
                         </div> 
-                        <input class="button-show" type="submit" value="Показать">
+                        <button class="button-show" type="submit">Показать</button>
                     </fieldset>
+
                 </form>
 
 <!-- Результат поиска и настройка его отображения -->

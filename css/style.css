@@ -298,9 +298,10 @@ input[type="radio"].visually-hidden {
     list-style: none;
 }
 
-.filter-cost [type="number"] {
+.filter-cost input {
+    width: 80px;
     background: none;
-    border: 2px solid #ffffff;
+    border: none;
     font-size: 14px;
     line-height: 21px;
     color: white;
@@ -312,10 +313,12 @@ input[type="radio"].visually-hidden {
     line-height: 21px;
     color: white;
     background: none;
-    width: 133px;
+    width: 137px;
+    min-height: 36px;
     padding:  6px 0;
     border: 2px solid #ffffff;
-    min-height: 32px;
+    border-radius: 2px;
+
 }
 
 .button-show:hover {
@@ -856,6 +859,8 @@ label[for="children"] {
 
                                                                      /* ---  сетка  Фильтр на внутренней ---*/
 
+
+                                                                     
 .filter {
     min-height: 217px;
     padding: 0px;
@@ -865,10 +870,53 @@ label[for="children"] {
     padding-right: 72px;
 }
 
+
 .filter-block {
     width: 240px;
-    min-height: 160px;
+    height: 160px;
 }
+
+.filter-section-header {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 22px;
+}
+
+.filter-list {
+    margin: 0px;
+    padding: 0px;
+}
+
+.filter-item {
+    display: block;
+    height: 25px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+
+.filter-item label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 40px; 
+}
+
+.chek-box{
+    position: absolute;
+    width: 26px;
+    height: 23px;
+    top: -3px;
+    left: 3px;
+    background: 0px 0px url("../img/checkbox-off.svg") no-repeat;
+}
+
+[type="checkbox"]:focus+span {
+    outline: #81b3d2 solid 2px;
+}
+
+[type="checkbox"]:checked+span {
+    background: 0px 0px url("../img/checkbox-on.svg") no-repeat;
+}
+
 
 .filter-infrastructure {
     margin-left: 72px;
@@ -880,14 +928,111 @@ label[for="children"] {
     padding: 0px;
 }
 
-.filter-cost{
+
+
+.filter-cost {
+    border: none;
     width: 328px;
     margin: 0px;
     padding: 0px;
-
     margin-left: auto;
+    display: flex;
 }
 
+.filter-cost .filter-section-header {
+    margin-left: 12px;
+    margin-bottom: 10px;
+}
+
+.range-value {
+    display: flex;
+    justify-content: center; /* gorisontal alighn*/
+    align-items: center;       /* vertical alighn*/
+    width: 314px;
+    min-height: 30px;
+    margin-left: 12px;
+    border: 2px solid white;
+    border-radius: 2px;
+    position: relative;
+}
+
+.range-value input {
+    margin: 0px;
+    padding: 0px;
+    width: 40px;
+    margin-right: 40px;
+}
+
+.range-value label{
+    margin: 0px;
+    padding: 0px;
+    width: 250px;
+    margin-right: 5px;
+    text-align: right;
+}
+
+
+
+.range-value::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 22px;
+    background: white;
+  }
+
+.range-buttons {
+    position: relative;
+}
+
+.filter-cost-button {
+    width: 28px;
+    height: 28px;
+}
+
+.filter-cost-button:hover svg {
+    width: 23px;
+    height: 25px;
+}
+
+.from::after {
+    position: absolute;
+    content: "";
+    width: 250px;
+    height: 2px;
+    background: rgba(255, 255, 255, 1);
+    top: 21px;
+    left: 25px;
+}
+
+.to::after {
+    position: absolute;
+    content: "";
+    width: 55px;
+    height: 2px;
+    background:rgba(255, 255, 255, 0.3);
+    top: 21px;
+    left: 275px;
+}
+
+.from svg {
+    position: absolute;
+    top: 12px;
+    left: 13px;
+}
+
+.to svg {
+    position: absolute;
+    top: 12px;
+    left: 265px;
+}
+
+.button-show {
+    margin: 0px;
+    padding: 0px;
+    margin-left: 99px;
+    margin-top: 55px;
+}
                                                                      /* ---  сетка  Инструменты сортировки на внутренней ---*/
 
 .sorting {
