@@ -991,19 +991,19 @@ label[for="children"] {
     height: 28px;
 }
 
-.filter-cost-button:hover svg {
-    width: 23px;
-    height: 25px;
+.filter-cost-button svg:hover {
+    width: 22px;
+    height: 24px;
 }
 
 .from::after {
     position: absolute;
     content: "";
-    width: 250px;
+    width: 248px;
     height: 2px;
     background: rgba(255, 255, 255, 1);
     top: 21px;
-    left: 25px;
+    left: 27px;
 }
 
 .to::after {
