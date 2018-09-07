@@ -206,7 +206,6 @@ input[type="radio"].visually-hidden {
     background-color: #766357;
     padding:  30px 0;
     width: 568px;
-    min-height: 86px;
     border: none;
 }
 
@@ -603,13 +602,14 @@ body {
         -ms-flex-align: end;
             align-items: flex-end;
     width: 1200px;
-    min-height: 330px;
+
     margin: 0;
     padding: 0; 
 }
 
 .advice-list li{
     width: 400px; 
+    margin-top: 155px;
 }
 
 .advice-list h4{
@@ -671,7 +671,7 @@ body {
                                                                      /* ---  сетка  "Заинтересовались?" ---*/
 
  .interesting {
-    min-height: 291px;
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -689,6 +689,7 @@ body {
 
  .interesting h2 {
     margin: 0;
+    margin-top: 50px;
     padding: 0;
  }
 
@@ -1024,7 +1025,6 @@ label[for="children"] {
     margin-left: auto;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
 }
 
 .filter-cost .filter-section-header {
