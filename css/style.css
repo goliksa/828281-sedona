@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-
     font-family: 'PT Sans', Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
@@ -80,7 +79,8 @@ input[type="radio"].visually-hidden {
     background-image: url("../img/poligon.svg"), url("../img/intro-background.jpg");
     background-size: 1200px 57px, 1200px 800px;
     background-position: bottom center, 0px -26px;
-    background-repeat: no-repeat, no-repeat;  
+    background-repeat: no-repeat, no-repeat;
+    background-color: #779ec0; 
 }
 
 .main-navigation {
@@ -116,10 +116,10 @@ input[type="radio"].visually-hidden {
 .description {
     font-size: 21px;
     line-height: 26px;
+    width: 575px;
     background-color: white;
     color: black;
     text-align: center;
-
 }
 
 .main-text {
@@ -131,6 +131,8 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages-main div{
+    display: block;
+    align-items: center;
     color: white;
     background-color: #81b3d2;
     text-align: center;
@@ -140,6 +142,12 @@ input[type="radio"].visually-hidden {
 .advantages-main-header {
     font-size: 21px;
     line-height: 21px;
+    width: 151px;
+    
+}
+
+.advantages-main p{
+    width: 303px;
 }
 
 .advice-list {
@@ -172,6 +180,7 @@ input[type="radio"].visually-hidden {
 .advantages-secondary-list h4 {
     font-size: 21px;
     line-height: 21px;
+    width: 120px;
 }
 
                                                         /* Заинтересовались*/
@@ -280,11 +289,11 @@ input[type="radio"].visually-hidden {
 }
 
 .filter {
-    background-color: #81b3d2;
     background: 0px -295px url("../img/form-background.jpg") no-repeat;
     background-size: 100%;
     color: white;
     font-weight: normal; 
+    background-color: #81b3d2;
 }
 
 .filter-block {
@@ -443,7 +452,7 @@ a.sorting-item-active {
 html,
 body {
     min-width: 1200px;
-    min-height: 1750;
+    min-height: 1750px;
 }
 
 .main-header-logo img{
@@ -528,6 +537,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -537,7 +547,7 @@ body {
                                                                      
 .description {
     margin: 0;
-    padding: 0;;
+    padding: 0;
     margin-top: 60px;
     margin-bottom: 27px;
 }
@@ -581,8 +591,8 @@ body {
 .advantages-main span{
     margin: 0px;
     padding: 0px;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    margin-bottom: 22px;
+    margin-top: 26px;
 }
 
 .advantages-main p{
@@ -598,18 +608,17 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+
     width: 1200px;
 
     margin: 0;
     padding: 0; 
+
 }
 
-.advice-list li{
+.advice-item{
     width: 400px; 
-    margin-top: 155px;
+    margin-top: 160px;
 }
 
 .advice-list h4{
@@ -644,7 +653,10 @@ body {
 .advice-list p{
     margin: 0;
     padding: 0;
-    margin-bottom: 85px;
+    width: 285px;
+    margin-bottom: 84px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -653,20 +665,28 @@ body {
 .advantages-secondary-list {
     width: 1200px; 
     min-height: 256px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin: 0;
     padding: 0; 
-    -ms-flex-pack: distribute; 
-        justify-content: space-around;
+    justify-content: space-around;
 }
 
-.advantages-secondary-list li{
+.advantages-secondary-item{
     width: 300px; 
     min-height: 200px;
     margin-top: 20px;
 }
+
+.advantages-secondary-item h4 {
+    margin-left: 90px;
+}
+.advantages-secondary-item p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 265px;
+}
+
 
                                                                      /* ---  сетка  "Заинтересовались?" ---*/
 
@@ -694,6 +714,7 @@ body {
  }
 
  .interesting p {
+    width: 438px;
     margin: 0;
     padding: 0;
     margin-top: 25px;
@@ -959,7 +980,7 @@ label[for="children"] {
 
 
 .filter-block {
-    width: 240px;
+    width: 253px;
     height: 160px;
 }
 
@@ -975,15 +996,14 @@ label[for="children"] {
 }
 
 .filter-item {
-    height: 25px;
-    padding-top: 5px;
+    line-height: 26px;
     margin-bottom: 20px;
 }
 
 .filter-item label {
     position: relative;
     cursor: pointer;
-    padding-left: 40px; 
+    padding-left: 43px; 
 }
 
 .chek-box{
@@ -1005,7 +1025,7 @@ label[for="children"] {
 
 
 .filter-infrastructure {
-    margin-left: 72px;
+    margin-left: 70px;
     padding: 0px;
 }
 
@@ -1031,30 +1051,29 @@ label[for="children"] {
 
 .range-value {
     width: 314px;
-    min-height: 20px;
+    min-height: 32px;
     margin-left: 12px;
     border: 2px solid white;
     border-radius: 2px;
     position: relative;
 }
 
+.range-value label {
+    margin-left: 65px;
+    margin-right: 13px;
+
+}
+
 .range-value input {
     margin: 0px;
     padding: 5px;
+    padding-left: 0px;
     width: 40px;
     text-align: left;
 
 }
 
-.range-value label{
-    margin: 0px;
-    padding: 0px;
-    width: 250px;
-    margin-right: 5px;
-    text-align: right;
-    margin-top: 10px;
-    margin-left: 65px;
-}
+
 
 
 
@@ -1324,8 +1343,22 @@ label[for="children"] {
     padding: 0px;
 }
 
-.o_O-where-is-it {
+.js .o_O-where-is-it {
     visibility: hidden;
+}
+
+@keyframes appearance {
+    0% {opacity: 0;}
+    20% {opacity: 0.2;}
+    40% {opacity: 0.4;}
+    60% {opacity: 0.6;}
+    80% {opacity: 0.8;}
+    100% {opacity: 1;}
+}
+
+.js .search-form-show {
+    animation-name: appearance;
+    animation-duration: 0.6s;
 }
 
 /*   

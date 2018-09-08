@@ -3,4 +3,5 @@ var form = document.querySelector(".search-form");
 
 button.addEventListener("click", function() {
     form.classList.toggle("o_O-where-is-it");
+    form.classList.toggle("search-form-show");
 })
