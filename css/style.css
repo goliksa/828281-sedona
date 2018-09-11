@@ -58,10 +58,7 @@ input[type="radio"].visually-hidden {
 
 .index-body {
     background-color: white;
-    background-image: url("../img/map.jpg");
-    background-size: 1200px 593px;
-    background-position: bottom center;
-    background-repeat: no-repeat;  
+ 
 }
 
 .main-header {
@@ -228,6 +225,15 @@ input[type="radio"].visually-hidden {
 }
 
                                                         /* Форма поиска отеля*/
+.map-section {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    background-image: url("../img/map.jpg");
+    background-size: 1200px 593px;
+    background-position: bottom center;
+    background-repeat: no-repeat; 
+}
 
 .search-form {
     width: 458px;
@@ -724,7 +730,8 @@ body {
 
 
 .search-form {
-    position: relative;
+    position: absolute;
+    left: 316px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -850,6 +857,8 @@ label[for="children"] {
                                                                      /* ---  сетка  Футер ---*/
 
 .main-footer {
+    position: absolute;
+    top: 2564px;
     width: 1200px;
     height: 120px;
     margin-top: 78px;
@@ -1360,17 +1369,11 @@ label[for="children"] {
     animation-duration: 0.6s;
 }
 
-/*   
-
-заготовка для интерактивной карты
- 
-
-.interactive-map iframe{
-    position: absolute;
+.map-section iframe{
+    margin: 0px;
+    padding: 0px;
     width: 1200px;
-    height: 593px;
+    height: 600px;
     border: none;
     top:1500px;
 }
-
-*/
